@@ -42,7 +42,7 @@ div {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
     .lg {
         display: block;
     }
