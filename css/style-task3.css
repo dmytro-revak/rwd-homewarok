@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: 100%;
+}
+
+div {
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.blue {
+    background-color: cornflowerblue;
+}
+
+.green {
+    background-color: darkgreen;
+}
+
+.red {
+    background-color: crimson;
+}
+
+.orange {
+    background-color: chocolate;
+}
+
+@media (max-width: 767px) {
+    .blue {
+        width: 100%;
+        height: 15%;
+    }
+    .green {
+        width: 100%;
+        height: 15%;
+    }
+    .red {
+        width: 100%;
+        height: 70%;
+    }
+    .orange {
+        width: 0%;
+        height: 0%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1100px) {
+    .blue {
+        width: 100%;
+        height: 20%;
+    }
+    .green {
+        width: 100%;
+        height: 20%;
+    }
+    .red {
+        width: 50%;
+        height: 60%;
+    }
+    .orange {
+        width: 50%;
+        height: 60%;
+        display: block;
+    }
+}
+
+@media (min-width:1100px) {
+    .blue {
+        width: 100%;
+        height: 20%;
+    }
+    .green {
+        width: 20%;
+        height: 80%;
+    }
+    .red {
+        width: 60%;
+        height: 80%;
+    }
+    .orange {
+        width: 20%;
+        height: 80%;
+    }
+}
