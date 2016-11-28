@@ -1,0 +1,242 @@
+.wrapper {
+    margin: 5px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper > * {
+    display: flex;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.flex > * {
+    height: 100%;
+}
+
+@media (max-width:667px) {
+    .cont-header {
+        height: 75px;
+        width: 100%;
+    }
+    .red {
+        background-color: crimson;
+        width: 100%;
+    }
+    .cont-list-yellow {
+        height: 400px;
+        width: 100%;
+        flex-wrap: wrap;
+        order: 1;
+    }
+    .yellow {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: yellow;
+        font-family: sans-serif;
+        font-size: 24px;
+        display: flex;
+    }
+    .yellow * {
+        margin: auto;
+    }
+    .yellow:nth-of-type(2) {
+        display: none;
+    }
+    .yellow:nth-of-type(3) {
+        display: none;
+    }
+    .yellow:nth-of-type(4) {
+        display: none;
+    }
+    .cont-list-orange {
+        height: 300px;
+        width: 100%;
+        order: 2;
+    }
+    .orange {
+        background-color: chocolate;
+        width: 100%;
+    }
+    .cont-list-green {
+        width: 100%;
+        height: 300px;
+        order: 3;
+    }
+    .green {
+        background-color: darkgreen;
+        width: 100%;
+    }
+    .cont-list-pink {
+        width: 100%;
+        height: 300px;
+        order: 4;
+    }
+    .pink {
+        background-color: coral;
+        width: 100%;
+    }
+    .cont-list-blue {
+        width: 100%;
+        height: 200px;
+        order: 5;
+    }
+    .blue {
+        background-color: darkblue;
+        width: 100%;
+    }
+}
+
+@media (min-width:668px) and (max-width:1100px) {
+    .cont-header {
+        height: 75px;
+        width: 100%;
+    }
+    .red {
+        background-color: crimson;
+        width: 100%;
+    }
+    .cont-list-orange {
+        height: 300px;
+        width: 70%;
+    }
+    .orange {
+        background-color: chocolate;
+        width: 100%;
+    }
+    .cont-list-green {
+        width: 30%;
+        height: 300px;
+        order: 1;
+    }
+    .green {
+        background-color: darkgreen;
+        width: 100%;
+    }
+    .cont-list-yellow {
+        height: 400px;
+        width: 100%;
+        flex-wrap: wrap;
+        order: 2;
+    }
+    .yellow {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: yellow;
+        font-family: sans-serif;
+        font-size: 24px;
+        display: flex;
+    }
+    .yellow * {
+        margin: auto;
+    }
+    .yellow:nth-of-type(2) {
+        display: none;
+    }
+    .yellow:nth-of-type(3) {
+        display: none;
+    }
+    .yellow:nth-of-type(4) {
+        display: none;
+    }
+    .cont-list-pink {
+        width: 100%;
+        height: 300px;
+        order: 3;
+    }
+    .pink {
+        background-color: coral;
+        width: 100%;
+    }
+    .cont-list-blue {
+        width: 100%;
+        height: 200px;
+        order: 4;
+    }
+    .blue {
+        background-color: darkblue;
+        width: 100%;
+    }
+}
+
+@media (min-width:1101px) {
+    .cont-header {
+        height: 75px;
+        width: 100%;
+    }
+    .red {
+        background-color: crimson;
+        width: 100%;
+    }
+    .cont-list-orange {
+        height: 100px;
+        width: 100%;
+    }
+    .orange {
+        background-color: chocolate;
+        width: 100%;
+    }
+    .cont-list-yellow {
+        height: 400px;
+        width: 70%;
+        flex-wrap: wrap;
+    }
+    .yellow {
+        width: 50%;
+        height: 50%;
+        box-sizing: border-box;
+        background-color: yellow;
+        font-family: sans-serif;
+        font-size: 24px;
+        display: flex;
+    }
+    .yellow * {
+        margin: auto;
+    }
+    .yellow:nth-of-type(1) {
+        border-right: 5px solid white;
+        border-bottom: 5px solid white;
+    }
+    .yellow:nth-of-type(2) {
+        border-left: 5px solid white;
+        border-bottom: 5px solid white;
+    }
+    .yellow:nth-of-type(3) {
+        border-right: 5px solid white;
+        border-top: 5px solid white;
+    }
+    .yellow:nth-of-type(4) {
+        border-left: 5px solid white;
+        border-top: 5px solid white;
+    }
+    .cont-list-green {
+        width: 30%;
+        height: 300px;
+    }
+    .green {
+        background-color: darkgreen;
+        width: 100%;
+    }
+    .cont-list-blue {
+        width: 30%;
+        height: 200px;
+        order: 1;
+        margin-top: -100px;
+    }
+    .blue {
+        background-color: darkblue;
+        width: 100%;
+    }
+    .cont-list-pink {
+        width: 70%;
+        height: 300px;
+        order: 0;
+    }
+    .pink {
+        background-color: coral;
+        width: 100%;
+    }
+}
