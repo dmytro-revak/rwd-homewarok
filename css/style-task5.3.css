@@ -1,0 +1,48 @@
+html,
+body,
+.main {
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/hip.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.circle {
+    width: 650px;
+    height: 650px;
+    background-image: url(../img/hip.png);
+    background-size: 100% 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 25px 10px hsla(0, 0%, 79%, 1);
+    animation-name: hip;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes hip {
+    0% {
+        transform: rotate(0deg);
+        width: 650px;
+        height: 650px;
+        opacity: 1;
+    }
+    50% {
+        transform: rotate(180deg);
+        height: 300px;
+        width: 300px;
+        opacity: 0.5;
+    }
+    100% {
+        transform: rotate(360deg);
+        height: 650px;
+        width: 650px;
+        opacity: 1;
+    }
+}

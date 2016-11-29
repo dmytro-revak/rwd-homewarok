@@ -1,0 +1,31 @@
+html,
+body,
+.wrapper {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 15px;
+    font-size: 40px;
+    position: relative;
+    border: 2px solid hsl(0, 0%, 58%);
+    border-radius: 20px;
+    box-shadow: 0 0 0 8px hsl(0, 0%, 79%), 0 0 0 11px hsl(0, 0%, 100%), 0 0 0 14px hsl(0, 0%, 45%);
+    color: hsl(0, 0%, 33%);
+    text-transform: uppercase;
+    text-shadow: 2px 0px 1px hsl(0, 0%, 33%);
+    background: linear-gradient(to top, hsl(0, 0%, 60%), hsl(0, 0%, 87%));
+}
+
+.check::before,
+.check::after {
+    content: "\2605";
+    color: hsl(0, 0%, 33%);
+    font-size: 40px;
+}

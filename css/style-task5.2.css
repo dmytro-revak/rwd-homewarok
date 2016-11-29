@@ -1,0 +1,21 @@
+.task {
+    height: auto;
+    width: 80%;
+    background-color: burlywood;
+    border: 5px solid red;
+    margin-bottom: 20px;
+}
+
+[role=navigation] > span a:not([href^=mailto]) {
+    font-size: 36px;
+    background-color: blueviolet;
+}
+
+div div a + p + p {
+    color: darkgreen;
+    font-size: 24px;
+}
+
+div div p:nth-child(3) {
+    background-color: chocolate;
+}
